@@ -9,7 +9,7 @@
 
       $("li")
         .hide()
-        .each(function (index) {
+        .each(function(index) {
           // Hide list items
           $(this)
             .delay(450 * index)
@@ -27,7 +27,7 @@
       // SETUP FORM FOR NEW ITEMS
       $newItemButton.show(); // Show the button
       $newItemForm.hide(); // Hide the form
-      $("#showForm").on("click", function () {
+      $("#showForm").on("click", function() {
         // When click on add item button
         $newItemButton.hide(); // Hide the button
         $newItemForm.show(); // Show the form
@@ -38,20 +38,21 @@
       It works when I delete an item! -BC 
       #################################################*/
       // ADDING A NEW LIST ITEM
-      $newItemForm.on("submit", function (e) {
+      $newItemForm.on("submit", function(e) {
         // When a new item is submitted
         e.preventDefault(); // Prevent form being submitted
         var text = $("input:text").val(); // Get value of text input
-        var defaultClass = "favorite";
+        var lowerCase = text.toLowerCase(); //makes text lowercase AF
+        var favoriteClass = "favorite";
         
-        $list.append("<li class=" + defaultClass + ">" + text + "</li>");
-        $("li").last().css("background-color", "green");
-        //$someItem.addClass(favorite);
+        $list.append("<li>" + lowerCase + "</li>");
+        $("li:last").addClass(favoriteClass);
 
-        //$list.append("<li class=>" + text + "</li>"); // Add item to end of the list
 
         $("input:text").val(""); // Empty the text input
-        updateCount; // Update the count  
+        //Missing Paratheses to complete function call AF
+        updateCount(); // Update the count
+      
       });
 
       /*#################################################
@@ -69,6 +70,7 @@
         best - don't hardcode in the class name, make it a variable.
       -BC 
       #################################################*/
+      /*done on lines 46,49 AF*/
 
 
       /*#################################################

@@ -97,7 +97,6 @@ li {
   list-style-type: none;
   text-shadow: 2px 2px 1px #9f593f;
   text-align: left;
-  text-transform: lowercase; /* made all list items lowercase*/
   height: 50px;
   padding-left: 1em;
   padding-top: 10px;
@@ -162,6 +161,7 @@ p {
   background-image: url("../images/icon-heart.png");
   background-position: right, center;
   background-repeat: no-repeat;
+  background-color: #3b6a5e;
 }
 
 em.seasonal {
