@@ -93,7 +93,7 @@ ul {
 
 li {
   background-color: #ec8b68;
-  color:#000000;
+  color: #fff;
   border-top: 1px solid #fe9772;
   border-bottom: 1px solid #9f593f;
   font-size: 24px;
@@ -205,7 +205,7 @@ a.add,
 button,
 a.show {
   background-color: #cb6868;
-  color: #f3dad1;
+  color: #000;
   border-radius: 8px;
   border: none;
   padding: 8px 10px;
@@ -292,11 +292,13 @@ label.selectbox {
 label.checkbox {
   display: inline;
   font-size: 16px;
+  
 }
 
 /* Link to show list */
 h2 a {
   font-size: 12px;
+  
 }
 
 a.show {
