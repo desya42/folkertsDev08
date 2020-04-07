@@ -90,6 +90,13 @@
           "HONEY" (treat those as all the same)
       -BC 
       #################################################*/
+      /*1.Create a loop  with a if statement to determine if the 
+        2. If lowercase last equals  lowercase before 
+        3. then window prompt a repeat
+        4. else add to the list
+        AF 
+      
+      */
 
 
 
